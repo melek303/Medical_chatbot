@@ -367,15 +367,15 @@ Voici un extrait des logs générés lors d’un mini dialogue avec le chatbot :
     "data": {"status": "terminated"}
   }
 ]
-
+```
 
 ## 💻 Comment exécuter le chatbot
 
 1. **Cloner le projet**  
 
 ```bash
-git clone <URL_DU_REPO>
-cd <NOM_DU_REPO>
+git clone https://github.com/melek303/Medical_chatbot.git
+cd Medical_chatbot
 
 python -m venv venv
 # Sur Linux/macOS
@@ -390,6 +390,7 @@ pip install -r requirements.txt
 Créez un fichier `.env` à la racine du projet et ajoutez vos clés API :
 
 ```env
-OPENAI_API_KEY=your_openai_api_key
+OPENAI_API_KEY=GEMINI_API_KEY
+```
 3. **Lancer le chatbot**
 Ouvrez le notebook chatbot.ipynb et exécutez les cellules pour démarrer la conversation.
