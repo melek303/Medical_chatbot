@@ -102,6 +102,9 @@ Contraintes clés :
 - pas de traitement personnalisé  
 - uniquement des informations éducatives
 
+LLM choisi:
+J’ai choisi le LLM **Gemini 2.5‑flash** car il fournit des réponses rapides et fiables avec un haut niveau de compréhension du langage naturel.
+**Il gère efficacement l’historique de conversation et les instructions système**, ce qui est essentiel pour un chatbot médical sûr et cohérent.
 ---
 
 ### 5️⃣ Vérification de Sécurité
