@@ -405,6 +405,7 @@ Créez un fichier `.env` à la racine du projet et ajoutez votre clé API Gemini
 GEMINI_API_KEY=ta_cle_api
 ```
 3. **Lancer le chatbot**
+
 1️⃣Ouvrez le notebook chatbot.ipynb.
 
 2️⃣Sélectionnez le kernel Python (myenv) dans Kernel → Change Kernel.
