@@ -250,7 +250,7 @@ Souhaitez-vous passer en téléconsultation maintenant ?
 ### Extrait de Logs JSON
 
 ## 📊 Exemple de Logs JSON
-
+Pour voir les logs complets, consultez le fichier `chat_logs.jsonl` dans le projet.
 Voici un extrait des logs générés lors d’un mini dialogue avec le chatbot :
 
 ```json
@@ -373,17 +373,30 @@ Voici un extrait des logs générés lors d’un mini dialogue avec le chatbot :
 1. **Cloner le projet**  
 
 ```bash
-git clone https://github.com/melek303/Medical_chatbot.git
-cd Medical_chatbot
+1️⃣git clone https://github.com/melek303/Medical_chatbot.git
+2️⃣cd Medical_chatbot
 
+3️⃣ #  Créer l'environnement virtuel
 python -m venv venv
+
+4️⃣ #  Activer le venv
 # Sur Linux/macOS
 source venv/bin/activate
-# Sur Windows
+# Sur Windows (Git Bash / Bash)
 source venv/Scripts/activate
 
+5️⃣ #  Mettre pip à jour
 pip install --upgrade pip
+
+6️⃣ #  Installer les dépendances du projet
 pip install -r requirements.txt
+
+7️⃣ #  Installer ipykernel si ce n'est pas déjà fait
+pip install ipykernel
+
+8️⃣ #  Ajouter le venv comme kernel Jupyter
+python -m ipykernel install --user --name=venv --display-name "Python (myenv)"
+
 ```
 2. **Configurer les clés API**  
 Créez un fichier `.env` à la racine du projet et ajoutez votre clé API Gemini :
@@ -392,4 +405,8 @@ Créez un fichier `.env` à la racine du projet et ajoutez votre clé API Gemini
 GEMINI_API_KEY=ta_cle_api
 ```
 3. **Lancer le chatbot**
-Ouvrez le notebook chatbot.ipynb et exécutez les cellules pour démarrer la conversation.
+1️⃣Ouvrez le notebook chatbot.ipynb.
+
+2️⃣Sélectionnez le kernel Python (myenv) dans Kernel → Change Kernel.
+
+3️⃣Exécutez les cellules pour démarrer la conversation avec le chatbot.
