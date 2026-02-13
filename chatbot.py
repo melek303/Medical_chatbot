@@ -1,11 +1,11 @@
 # chatbot_main.py
-from detect_red_flag import detect_red_flag_llm
-from chatbot_response_safety import check_medical_safety
-from detect_intention import detect_intent
-from should_offer_teleconsultation import should_offer_teleconsultation_llm
-from detect_end_of_conversation import detect_end_conversation  
+from modules.detect_red_flag import detect_red_flag_llm
+from modules.chatbot_response_safety import check_medical_safety
+from modules.detect_intention import detect_intent
+from modules.should_offer_teleconsultation import should_offer_teleconsultation_llm
+from modules.detect_end_of_conversation import detect_end_conversation  
 
-from medical_assistant import generate_response
+from modules.medical_assistant import generate_response
 
 import json
 import time
