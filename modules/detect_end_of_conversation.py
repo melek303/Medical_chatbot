@@ -1,15 +1,3 @@
-from ollama import Client
-def generate_content_llama(prompt):
-# 1️⃣ Crée le client
-    client = Client()
-
-    # 2️⃣ Appelle ton modèle local llama3.2
-    response = client.generate(
-        model="llama3.2",
-        prompt=prompt,
-    )
-
-    return response.response.strip()
 
 def detect_end_conversation(user_input,model):
     """
