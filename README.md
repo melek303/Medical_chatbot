@@ -196,10 +196,8 @@ Le système est évalué sur :
 
 ## 🚀 Améliorations Possibles
 
-- ancrage dans des connaissances médicales structurées (RAG)  
-- classifieur sécurité hybride (règles + LLM)  
+- RAG (Retrieval-Augmented Generation) pour informations médicales et questions administratives.    
 - apprentissage par renforcement à partir du feedback de sécurité  
-- adaptation multilingue médicale
 
 ---
 
@@ -371,3 +369,27 @@ Voici un extrait des logs générés lors d’un mini dialogue avec le chatbot :
 ]
 
 
+## 💻 Comment exécuter le chatbot
+
+1. **Cloner le projet**  
+
+```bash
+git clone <URL_DU_REPO>
+cd <NOM_DU_REPO>
+
+python -m venv venv
+# Sur Linux/macOS
+source venv/bin/activate
+# Sur Windows
+venv\Scripts\activate
+
+pip install --upgrade pip
+pip install -r requirements.txt
+
+2. **Configurer les clés API**
+Créez un fichier `.env` à la racine du projet et ajoutez vos clés API :
+
+```env
+OPENAI_API_KEY=your_openai_api_key
+3. **Lancer le chatbot**
+Ouvrez le notebook chatbot.ipynb et exécutez les cellules pour démarrer la conversation.
