@@ -1,0 +1,61 @@
+Exemple 1
+
+{"response time": 0, "event_type": "conversation_start", "data": {"greeting": "Bonjour ! Je suis là pour vous fournir des informations de santé générales."}}
+{"response time": 0, "event_type": "user_message", "data": {"text": "J'ai de la fièvre, quel médicament dois-je prendre ?"}}
+{"response time": 6.2907936573028564, "event_type": "intent_detected", "data": {"intent": "OTHER"}}
+{"response time": 2.015843152999878, "event_type": "red_flag_check", "data": {"red_flag": false}}
+{"response time": 6.440876483917236, "event_type": "conversation_checks", "data": {"offer_teleconsultation": false, "end_conversation": false}}
+{"response time": 2.1035609245300293, "event_type": "safety_check", "data": {"safe": true}}
+{"response time": 5.750876188278198, "event_type": "assistant_response", "data": {"response": "En tant que chatbot, je ne suis pas habilité à vous prescrire des médicaments ni à vous donner des conseils médicaux personnalisés.\n\nPour savoir quel médicament prendre pour la fièvre, il est essentiel de consulter un médecin ou un pharmacien. Ils pourront évaluer votre situation et vous conseiller le traitement le plus adapté.\n\nEn attendant, assurez-vous de bien vous reposer et de vous hydrater."}}
+{"response time": 0, "event_type": "user_message", "data": {"text": "Est-ce que je peux prendre du paracétamol pour ma fièvre ?"}}
+{"response time": 1.9478836059570312, "event_type": "intent_detected", "data": {"intent": "OTHER"}}
+{"response time": 1.2668957710266113, "event_type": "red_flag_check", "data": {"red_flag": false}}
+{"response time": 3.473212957382202, "event_type": "conversation_checks", "data": {"offer_teleconsultation": false, "end_conversation": false}}
+{"response time": 2.540811061859131, "event_type": "safety_check", "data": {"safe": true}}
+{"response time": 6.508579254150391, "event_type": "assistant_response", "data": {"response": "En tant que chatbot, je ne peux pas vous conseiller personnellement sur la prise de médicaments, même le paracétamol.\n\nLe paracétamol est un médicament fréquemment utilisé pour la fièvre. Pour savoir si c'est adapté à votre situation, il est essentiel de consulter un médecin ou un pharmacien. Ils pourront vous donner un avis médical personnalisé et s'assurer qu'il n'y a pas de contre-indications."}}
+{"response time": 0, "event_type": "user_message", "data": {"text": "Mes symptômes durent depuis 3 jours et je suis très inquiet."}}
+{"response time": 2.725797653198242, "event_type": "intent_detected", "data": {"intent": "SYMPTOMS"}}
+{"response time": 1.5016136169433594, "event_type": "red_flag_check", "data": {"red_flag": false}}
+{"response time": 2.4856011867523193, "event_type": "conversation_checks", "data": {"offer_teleconsultation": true, "end_conversation": false}}
+{"response time": 2.4769489765167236, "event_type": "safety_check", "data": {"safe": true}}
+{"response time": 0, "event_type": "teleconsultation_proposed", "data": {"response": "Je comprends votre inquiétude face à des symptômes qui durent depuis 3 jours.\n\nEn tant que chatbot, je ne peux pas évaluer votre situation personnelle. Cependant, la persistance des symptômes et votre inquiétude sont des raisons valables de consulter un professionnel de santé.\n\nJe vous recommande de prendre rendez-vous avec un médecin. Il pourra évaluer vos symptômes, vous rassurer et vous orienter vers le traitement le plus approprié.\n\nSouhaitez-vous passer en téléconsultation maintenant ?"}}
+{"response time": 0, "event_type": "conversation_end", "data": {"status": "terminated"}}
+
+
+Exemple 2
+
+{"response time": 0, "event_type": "conversation_start", "data": {"greeting": "Bonjour ! Je suis là pour vous fournir des informations de santé générales."}}
+{"response time": 0, "event_type": "user_message", "data": {"text": "bonjour. j'ai mal au ventre accompagné de vomissement"}}
+{"response time": 1.0388078689575195, "event_type": "intent_detected", "data": {"intent": "SYMPTOMS"}}
+{"response time": 1.5787975788116455, "event_type": "red_flag_check", "data": {"red_flag": false}}
+{"response time": 4.203305721282959, "event_type": "conversation_checks", "data": {"offer_teleconsultation": false, "end_conversation": false}}
+{"response time": 2.5795061588287354, "event_type": "safety_check", "data": {"safe": true}}
+{"response time": 4.301958799362183, "event_type": "assistant_response", "data": {"response": "Bonjour. Des douleurs au ventre accompagnées de vomissements peuvent avoir plusieurs causes.\n\nIl est important de consulter un médecin pour qu'il puisse évaluer vos symptômes et poser un diagnostic précis. Je ne peux pas faire de diagnostic ni vous donner de conseils médicaux personnalisés."}}
+{"response time": 0, "event_type": "user_message", "data": {"text": "quelles sont les causes possibles?"}}
+{"response time": 1.5839638710021973, "event_type": "intent_detected", "data": {"intent": "OTHER"}}
+{"response time": 0.9587857723236084, "event_type": "red_flag_check", "data": {"red_flag": false}}
+{"response time": 5.695168495178223, "event_type": "conversation_checks", "data": {"offer_teleconsultation": true, "end_conversation": false}}
+{"response time": 2.7545876502990723, "event_type": "safety_check", "data": {"safe": true}}
+{"response time": 0, "event_type": "teleconsultation_proposed", "data": {"response": "Les douleurs au ventre et les vomissements peuvent être liés à plusieurs affections courantes. Parmi les causes possibles, on retrouve souvent :\n\n*   La gastro-entérite (une infection virale ou bactérienne de l'estomac et des intestins).\n*   Une intoxication alimentaire.\n*   Une indigestion.\n\nD'autres causes existent, parfois plus sérieuses. Seul un professionnel de santé pourra déterminer l'origine exacte de vos symptômes après un examen.\n\nSouhaitez-vous passer en téléconsultation maintenant ?"}}
+{"response time": 0, "event_type": "conversation_end", "data": {"status": "terminated"}}
+
+
+Exemple 3
+
+
+{"response time": 0, "event_type": "conversation_start", "data": {"greeting": "Bonjour ! Je suis là pour vous fournir des informations de santé générales."}}
+{"response time": 0, "event_type": "user_message", "data": {"text": "bonjour. je vois du sang dans mes vomissements"}}
+{"response time": 2.014188289642334, "event_type": "intent_detected", "data": {"intent": "URGENT"}}
+{"response time": 0, "event_type": "urgent_detected", "data": {"response": "Vos symptômes semblent urgents. Je vous recommande une téléconsultation ou un rendez-vous en urgence."}}
+{"response time": 0, "event_type": "conversation_end", "data": {"status": "terminated"}}
+
+
+Exemple 4
+
+
+{"response time": 0, "event_type": "conversation_start", "data": {"greeting": "Bonjour ! Je suis là pour vous fournir des informations de santé générales."}}
+{"response time": 0, "event_type": "user_message", "data": {"text": "bonjour . j'i douleur en poitrine et en mes os"}}
+{"response time": 1.6919965744018555, "event_type": "intent_detected", "data": {"intent": "SYMPTOMS"}}
+{"response time": 1.100351333618164, "event_type": "red_flag_check", "data": {"red_flag": true}}
+{"response time": 0, "event_type": "red_flag_triggered", "data": {"response": "Vos symptômes pourraient nécessiter une attention rapide. Souhaitez-vous passer en téléconsultation maintenant ?"}}
+{"response time": 0, "event_type": "conversation_end", "data": {"status": "terminated"}}
