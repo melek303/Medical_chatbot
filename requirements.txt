@@ -1,0 +1,12 @@
+# Gestion des environnements et variables
+python-dotenv>=1.0.0
+
+# Affichage HTML dans Jupyter
+ipython>=8.0.0
+ipywidgets>=8.0.0
+
+# Librairie pour logs et JSON (standard, mais utile pour notes)
+# json est builtin, pas besoin de l’installer
+
+# Librairie pour l’API Gemini
+google-generativeai>=0.2.0
