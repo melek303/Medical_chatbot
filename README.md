@@ -249,7 +249,6 @@ Souhaitez-vous passer en téléconsultation maintenant ?
 
 ### Extrait de Logs JSON
 
-```json
 ## 📊 Exemple de Logs JSON
 
 Voici un extrait des logs générés lors d’un mini dialogue avec le chatbot :
@@ -386,11 +385,11 @@ venv\Scripts\activate
 pip install --upgrade pip
 pip install -r requirements.txt
 
-2. **Configurer les clés API**
-Créez un fichier `.env` à la racine du projet et ajoutez vos clés API :
+2. **Configurer les clés API**  
+Créez un fichier `.env` à la racine du projet et ajoutez votre clé API Gemini :
 
 ```env
-OPENAI_API_KEY=GEMINI_API_KEY
-```
+GEMINI_API_KEY=ta_cle_api
+
 3. **Lancer le chatbot**
 Ouvrez le notebook chatbot.ipynb et exécutez les cellules pour démarrer la conversation.
