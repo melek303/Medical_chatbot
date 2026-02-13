@@ -384,12 +384,12 @@ venv\Scripts\activate
 
 pip install --upgrade pip
 pip install -r requirements.txt
-
+```
 2. **Configurer les clés API**  
 Créez un fichier `.env` à la racine du projet et ajoutez votre clé API Gemini :
 
 ```env
 GEMINI_API_KEY=ta_cle_api
-
+```
 3. **Lancer le chatbot**
 Ouvrez le notebook chatbot.ipynb et exécutez les cellules pour démarrer la conversation.
