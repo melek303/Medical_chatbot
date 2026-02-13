@@ -380,7 +380,7 @@ python -m venv venv
 # Sur Linux/macOS
 source venv/bin/activate
 # Sur Windows
-venv\Scripts\activate
+source venv\Scripts\activate
 
 pip install --upgrade pip
 pip install -r requirements.txt
