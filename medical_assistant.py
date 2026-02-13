@@ -8,14 +8,13 @@ Style : clair, rassurant, non alarmiste.
 Sois bref et précis.
 """
 
-def generate_response(user_input: str, history: list, model, temperature: float = 0.3) -> str:
+def generate_response( history: list, model,additional_system_prompt="", temperature: float = 0.2) -> str:
     """
     Génère une réponse en prenant en compte tout l'historique.
     history : liste de dictionnaires [{"role": "user"/"assistant", "content": "..."}]
     """
 
-    # Ajouter le nouveau message utilisateur à l’historique
-    history.append({"role": "user", "content": user_input})
+    
 
     # Reconstruction de la conversation
     conversation_text = ""
@@ -26,8 +25,12 @@ def generate_response(user_input: str, history: list, model, temperature: float 
             conversation_text += f"Chatbot : {message['content']}\n"
 
     # Prompt final
+    
+    
+    New_prompt =SYSTEM_PROMPT+ "\n" + additional_system_prompt
+
     full_prompt = f"""
-{SYSTEM_PROMPT}
+{New_prompt}
 
 Historique de conversation :
 {conversation_text}
@@ -45,7 +48,6 @@ Chatbot :
 
     assistant_reply = response.text.strip()
 
-    # Ajouter la réponse du chatbot à l’historique
-    history.append({"role": "assistant", "content": assistant_reply})
+
 
     return assistant_reply
